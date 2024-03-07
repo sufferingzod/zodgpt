@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "ENTER YOUR API KEY HERE"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "ENTER YOUR TELEGRAM TOKEN HERE"
+    tgkey = "7195135003:AAH1u4Zfb2XstKeAW0YJWI1ItVGf0iUr9zM"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -33,8 +33,8 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'Harshit ethic'
-username = 'harshitethic_bot'
+botname = 'Zod GPT'
+username = 'ZODGPT_BOT'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -64,8 +64,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Zod GPT'
+        username = 'ZODGPT_BOT'
         update.message.reply_text('Hi')
         return 
     else:
@@ -99,8 +99,8 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Zod GPT'
+        username = 'ZODGPT_BOT'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
@@ -126,8 +126,8 @@ def retry(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Zod GPT'
+        username = 'ZODGPT_BOT'
         update.message.reply_text('Send a message!')
         return 
     else:
@@ -187,8 +187,8 @@ def wait(bot, update, botname, username, new):
                 cache = None
                 qcache = None
                 user = ""
-                username = 'harshitethic_bot'
-                botname = 'Harshit Ethic'
+                username = 'Zod GPT'
+                botname = 'ZODGPT_BOT'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
     else:
